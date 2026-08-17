@@ -1,0 +1,14 @@
+name: say hello
+on: 
+ push: 
+   branches:
+      - Iceversion
+
+jobs:
+  build:
+    runs-on: ubantu-latest
+    steps:
+     - uses: actions/checkout@v4
+     - run: echo "Hello"
+     
+     
